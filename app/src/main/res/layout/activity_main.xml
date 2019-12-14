@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<androidx.constraintlayout.widget.ConstraintLayout-->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    android:background="@color/backgroundcolor"
+    tools:context=".MainActivity">
+
+
+    <!--<TextView
+        android:id="@+id/tv_date"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="MM/DD/YYYY"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/et_phone"
+        app:layout_constraintTop_toBottomOf="@+id/sp_gender" />
+
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_password"
+        app:layout_constraintStart_toStartOf="@+id/et_password"
+        app:layout_constraintTop_toBottomOf="@+id/et_password" />
+
+    <Spinner
+        android:id="@+id/sp_gender"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/et_phone"
+        app:layout_constraintTop_toBottomOf="@+id/et_phone" />
+
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Phone Number (010-0000000)"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="@+id/et_name"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_name"
+        app:layout_constraintTop_toBottomOf="@+id/et_name" />
+
+    <TextView
+        android:id="@+id/tv_useremial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="User Registration"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_useremial" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPersonName"
+        android:password="false"
+        app:layout_constraintStart_toStartOf="@+id/et_email"
+        app:layout_constraintTop_toBottomOf="@+id/et_email" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Register"
+        app:layout_constraintEnd_toEndOf="@+id/et_phone"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/et_phone"
+        app:layout_constraintTop_toBottomOf="@+id/tv_date" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:text="Already have an account? Log in here"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_register"
+        app:layout_constraintStart_toStartOf="@+id/btn_register"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register" />-->
+
+
+<!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="User Registration"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorPrimary"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:ems="10"
+
+
+            android:textSize="20sp"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/colorPrimary"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+
+            android:hint="Password"
+            android:textSize="20sp" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/colorPrimary"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Full Name"
+            android:ems="10"
+
+            android:textSize="20sp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_marginTop="5dp"
+        android:textColorHint="@color/colorPrimary"
+        >
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number(010-0000000)"
+            android:ems="10"
+            android:textSize="20sp"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!--<RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gender: "
+        android:textSize="20sp"
+        />
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textSize="20sp"
+            android:layout_marginLeft="10dp"
+            />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="Female"
+            android:textSize="20sp"
+            />
+
+
+    </RadioGroup>-->
+    <Spinner
+        android:id="@+id/sp_gender"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp">
+
+    </Spinner>
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="MM/DD/YYYY"
+        android:textAlignment="center"
+        android:textSize="18sp"/>
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Register"
+        android:layout_marginTop="40dp"
+        android:textSize="22sp"
+        android:textColor="#ffffff"
+
+        android:background="@drawable/square"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Already have an account? Log in here"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="@+id/btn_register"
+        app:layout_constraintStart_toStartOf="@+id/btn_register"
+        app:layout_constraintTop_toBottomOf="@+id/btn_register" />-->
+
+
+
+</LinearLayout>
+

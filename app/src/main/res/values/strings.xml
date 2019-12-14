@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">MobileProject</string>
+    <string name="show_dialog">Show dialog</string>
+
+    <string-array name="Gender">
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <array name="Job_categories">
+        <item>Admin and business</item>
+        <item>Cleaning</item>
+        <item>Designer</item>
+        <item>Furniture Assembly</item>
+        <item>Handy man</item>
+        <item>Mini Tasks</item>
+        <item>Moving Helps</item>
+        <item>Promoters</item>
+        <item>Waiter/Waitress</item>
+    </array>
+</resources>

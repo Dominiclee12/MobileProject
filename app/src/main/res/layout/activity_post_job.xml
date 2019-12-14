@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PostJobActivity" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/C1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:id="@+id/et_job_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Job Title"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/spinner_job_category"
+                app:layout_constraintStart_toStartOf="@+id/spinner_job_category"
+                app:layout_constraintTop_toBottomOf="@+id/spinner_job_category" />
+
+            <Spinner
+                android:id="@+id/spinner_job_category"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                android:entries="@array/Job_categories"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btn_post_job"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Post"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="@+id/et_salary"
+                app:layout_constraintStart_toStartOf="@+id/et_salary"
+                app:layout_constraintTop_toBottomOf="@+id/iv_photo" />
+
+            <EditText
+                android:id="@+id/et_job_description"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Job Description"
+                android:inputType="textMultiLine|textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/et_job_title"
+                app:layout_constraintStart_toStartOf="@+id/et_job_title"
+                app:layout_constraintTop_toBottomOf="@+id/et_job_title" />
+
+            <EditText
+                android:id="@+id/et_work_date"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:editable="false"
+                android:ems="10"
+                android:focusable="false"
+                android:hint="Working Date"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toStartOf="@+id/btn_work_date"
+                app:layout_constraintStart_toStartOf="@+id/et_job_description"
+                app:layout_constraintTop_toBottomOf="@+id/et_job_description" />
+
+            <Button
+                android:id="@+id/btn_work_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date"
+                app:layout_constraintBottom_toBottomOf="@+id/et_work_date"
+                app:layout_constraintEnd_toEndOf="@+id/et_job_description"
+                app:layout_constraintTop_toTopOf="@+id/et_work_date" />
+
+            <EditText
+                android:id="@+id/et_work_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Working Time (00.00am - 00.00pm)"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/btn_work_date"
+                app:layout_constraintStart_toStartOf="@+id/et_work_date"
+                app:layout_constraintTop_toBottomOf="@+id/et_work_date" />
+
+            <EditText
+                android:id="@+id/et_location"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Location"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/et_work_time"
+                app:layout_constraintStart_toStartOf="@+id/et_work_time"
+                app:layout_constraintTop_toBottomOf="@+id/et_work_time" />
+
+            <EditText
+                android:id="@+id/et_salary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:ems="10"
+                android:hint="Salary (RM 00.00)"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toEndOf="@+id/et_location"
+                app:layout_constraintStart_toStartOf="@+id/et_location"
+                app:layout_constraintTop_toBottomOf="@+id/et_location" />
+
+            <Button
+                android:id="@+id/btn_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:text="Select Picture"
+                app:layout_constraintEnd_toEndOf="@+id/et_salary"
+                app:layout_constraintStart_toEndOf="@+id/iv_photo"
+                app:layout_constraintTop_toBottomOf="@+id/et_salary" />
+
+            <ImageView
+                android:id="@+id/iv_photo"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintStart_toStartOf="@+id/et_salary"
+                app:layout_constraintTop_toBottomOf="@+id/et_salary"
+                app:srcCompat="@mipmap/ic_launcher" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </RelativeLayout>
+</ScrollView>
